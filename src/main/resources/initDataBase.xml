@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml> 
+<data name="初始数据">
+
+	<menus name="资源">
+		<menu id="xtgl" pid="" menuName="系统管理" url=""  icon="ext-icon-application_view_tile"></menu>
+		<menu id="jsgl" pid="xtgl" menuName="角色管理" url=""  icon="ext-icon-application_view_tile"></menu>
+		<menu id="bmgl" pid="xtgl" menuName="部门管理" url=""  icon="ext-icon-application_view_tile"></menu>
+		<menu id="1" pid="bmgl" menuName="部门1" url=""  icon="ext-icon-application_view_tile"></menu>
+		<menu id="2" pid="bmgl" menuName="部门2" url=""  icon="ext-icon-application_view_tile"></menu>
+	</menus>
+
+	<users name="用户">
+		<user id="0" username="admin" password="admin" realname="温祥" gender="0" age="31" />
+	</users>
+
+</data>

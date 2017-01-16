@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<!-- 指定由 spring 负责 action 对象的创建 -->
+	<constant name="struts.objectFactory" value="spring" />
+	<!-- 配置为开发模式 -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 配置扩展名为action -->
+	<constant name="struts.action.extension" value="action"/>
+	<!-- 配置 struts2 标签主题 -->
+	<constant name="struts.ui.theme" value="simple"/>
+	<!-- struts2 配置文件改动后,是否重新加载 -->
+	<constant name="struts.configuration.xml.reload" value="true"/>
+	<!-- 设置浏览器是否缓存静态内容 -->
+	<constant name="struts.serve.static.browserCache" value="false"/>
+	<!-- 每次http请求系统都重新加载资源文件,有助于开发 -->
+	<constant name="struts.i18n.reload" value="true"/>
+	<!-- 文件上传最大值 -->
+	<constant name="struts.multipart.maxSize" value="104857600"/>
+	<!-- 开启动态方法调用 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+	
+    <package name="default" namespace="/" extends="struts-default">
+    	<!-- 允许所有方法,也可以单写一个方法,2.5之后的新特性 -->
+		<global-allowed-methods>regex:.*</global-allowed-methods> 
+    </package>
+
+</struts>
+
